@@ -1,1 +1,56 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Paraná</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agro Paraná</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#industria">Indústria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Agro Paraná</h2>
+            <p>O Agro Paraná é referência na produção agrícola e na indústria agroalimentar, unindo tradição e tecnologia.</p>
+        </section>
+
+        <section id="industria">
+            <h2>Indústrias do Paraná</h2>
+            <div class="industria-lista">
+                <button onclick="mostrarDetalhes('soja')">Soja</button>
+                <button onclick="mostrarDetalhes('milho')">Milho</button>
+                <button onclick="mostrarDetalhes('cafe')">Café</button>
+            </div>
+            <div id="detalhes"></div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="formContato">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="resposta"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Agro Paraná. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
